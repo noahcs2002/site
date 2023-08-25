@@ -1,0 +1,208 @@
+:root {
+    --accent : #84A98C;
+    --main2 : #8D80AD;
+    --textColor : #CAD2C5;
+    --textColorDark : #333;
+    --headerFooter : #9b9b9b;
+    /* --background : #09153E; */
+    --fontFamily : 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;      
+}
+
+/* * {
+    border:solid 2px red;
+} */
+
+html {
+    font-family: var(--fontFamily);
+    background-color: var(--accent);
+}
+
+a {
+    color: var(--textColor);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--main2);
+}
+/* Step 1: Basic Styling */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: var(--headerFooter);
+    color: var(--textColorDark);
+    padding: 10px;
+}
+
+header h1 {
+    color: var(--textColorDark);
+}
+
+/* Step 2: Typography and Colors */
+h1, h2, h3 {
+    color: var(--textColor);
+}
+
+nav a {
+    color: var(--textColorDark);
+    text-decoration: none;
+}
+
+/* Step 3: Navigation Styles */
+nav a:hover {
+    text-decoration: underline;
+    color: var(--main2);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+/* Step 4: Introduction Section Styling */
+.intro {
+    background: linear-gradient(to bottom, var(--accent), var(--main2));
+    color: var(--textColor);
+    padding: 40px;
+}
+
+.intro a {
+    background-color: #fff;
+    color: var(--textColor);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.intro a:hover {
+    background-color: var(--main2);
+}
+
+/* Step 5: Services Section Styling */
+.services ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
+.services li {
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.services li:hover {
+    color: var(--accent);
+}
+
+/* Step 6: Footer Styling */
+footer {
+    background-color: var(--headerFooter);
+    text-align: center;
+    padding: 5px;
+}
+
+/* Step 7: Responsive Design */
+@media (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav li {
+        margin: 10px 0;
+    }
+}
+
+/* Step 8: Box Shadows and Rounded Corners */
+header, .intro, .services {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Step 9: Animations and Transitions */
+header h1, header nav {
+    opacity: 0;
+    animation: fadeIn .25s ease-in-out forwards;
+}
+
+nav a, .intro a {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Step 10: Flexbox Layout */
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stacked {
+    display: flex;
+    flex-direction: column;
+}
+
+.stack {
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+}
+
+p {
+    text-indent: 20px;
+}
+
+.columnar-container {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 2%;
+}
+
+/* 40% of the screen, on the left, giving quick-glance info */
+.column-info {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1.5%;
+    width: 40%;
+    border: 6px solid var(--main2);
+    border-radius: 30px;
+    padding-right: 2%;
+}   
+
+/* 60% of screen, on the right, describing internship */
+.column-description {
+    display: flex;
+    flex-direction: column;
+    border: 6px solid var(--main2);
+    border-radius: 30px;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+}
+
+.center li {
+    list-style-type: none;   
+}
+
+.center li em {
+    color: var(--textColor);
+}
