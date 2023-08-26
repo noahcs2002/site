@@ -38,12 +38,6 @@ header, footer {
     padding: 10px;
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
 header h1 {
     color: var(--textColorDark);
 }
