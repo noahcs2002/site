@@ -170,6 +170,10 @@ p {
     text-indent: 20px;
 }
 
+.noindent {
+    text-indent: 0px;
+}
+
 .columnar-container {
     display: flex;
     flex-direction: row;
@@ -213,5 +217,11 @@ p {
     min-width: 50%;
     display: flex;
     flex-direction: column;
+    margin: 2%;
 }
 
+.interest {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
